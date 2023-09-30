@@ -131,50 +131,204 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <Button
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/today_album1"
                         android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/buttonshape"
                         android:drawableTop="@drawable/lailac_edit"
                         android:text="제목"
                         android:textColor="@color/black"
                         android:gravity="start"
                         android:padding="0dp"
                         android:layout_marginHorizontal="3dp"
-                        />
-                    <Button
+                        >
+                        <ImageView
+                            android:id="@+id/today_album1_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lailac_edit"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                        <TextView
+                            android:id="@+id/today_album1_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album1_image"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="LILAC"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/today_album1_artist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album1_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="아이유(IU)"
+                            android:textSize="10dp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/today_album2"
                         android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/buttonshape"
                         android:drawableTop="@drawable/lailac_edit"
                         android:text="제목"
                         android:textColor="@color/black"
                         android:gravity="start"
                         android:padding="0dp"
                         android:layout_marginHorizontal="3dp"
-                        />
-                    <Button
+                        >
+                        <ImageView
+                            android:id="@+id/today_album2_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lailac_edit"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                        <TextView
+                            android:id="@+id/today_album2_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album2_image"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="LILAC"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album2_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="아이유(IU)"
+                            android:textSize="10dp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/today_album3"
                         android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/buttonshape"
                         android:drawableTop="@drawable/lailac_edit"
                         android:text="제목"
                         android:textColor="@color/black"
                         android:gravity="start"
                         android:padding="0dp"
                         android:layout_marginHorizontal="3dp"
-                        />
-                    <Button
+                        >
+                        <ImageView
+                            android:id="@+id/today_album3_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lailac_edit"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                        <TextView
+                            android:id="@+id/today_album3_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album3_image"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="LILAC"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album3_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="아이유(IU)"
+                            android:textSize="10dp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/today_album4"
                         android:layout_width="130dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/buttonshape"
                         android:drawableTop="@drawable/lailac_edit"
                         android:text="제목"
                         android:textColor="@color/black"
                         android:gravity="start"
                         android:padding="0dp"
                         android:layout_marginHorizontal="3dp"
-                        />
+                        >
+                        <ImageView
+                            android:id="@+id/today_album4_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lailac_edit"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                        <TextView
+                            android:id="@+id/today_album4_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album4_image"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="LILAC"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album4_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="아이유(IU)"
+                            android:textSize="10dp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/today_album5"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/lailac_edit"
+                        android:text="제목"
+                        android:textColor="@color/black"
+                        android:gravity="start"
+                        android:padding="0dp"
+                        android:layout_marginHorizontal="3dp"
+                        >
+                        <ImageView
+                            android:id="@+id/today_album5_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lailac_edit"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                        <TextView
+                            android:id="@+id/today_album5_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album5_image"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="LILAC"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            app:layout_constraintTop_toBottomOf="@+id/today_album5_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="아이유(IU)"
+                            android:textSize="10dp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    />
                 </LinearLayout>
 
             </HorizontalScrollView>

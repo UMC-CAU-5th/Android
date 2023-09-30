@@ -3,11 +3,11 @@
     <item
         android:id="@+id/homeFrag"
         android:title="홈"
-        android:icon="@drawable/house_btn"/>
+        android:icon="@drawable/house_btn" />
     <item
         android:id="@+id/lookFrag"
         android:title="둘러보기"
-        android:icon="@drawable/look_btn"/>
+        android:icon="@drawable/look_btn" />
     <item
         android:id="@+id/searchFrag"
         android:title="검색"
