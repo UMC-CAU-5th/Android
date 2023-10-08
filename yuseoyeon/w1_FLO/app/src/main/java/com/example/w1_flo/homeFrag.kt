@@ -1,14 +1,16 @@
 package com.example.w1_flo
 
-import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.example.w1_flo.databinding.FragmentHomeBinding
+import me.relex.circleindicator.CircleIndicator
+import me.relex.circleindicator.CircleIndicator3
+
 
 private lateinit var binding:FragmentHomeBinding
 
@@ -31,9 +33,24 @@ class homeFrag : Fragment() {
             fragAlbum.arguments=bundle
             Log.d("Song",song.title+song.artist)
 
-            (context as MainActivity).supportFragmentManager.beginTransaction().add(R.id.fragmentContainerView,fragAlbum,"album").commitAllowingStateLoss()
+            (context as MainActivity).supportFragmentManager.beginTransaction().add(R.id.fragmentContainerView ,fragAlbum,"album").commitAllowingStateLoss()
             //(context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView,fragAlbum).commitAllowingStateLoss()
         }
+
+        val bannerAdapter=BannerVPAdapter(this)
+        bannerAdapter.addFragment(BannerFrag(R.drawable.banner))
+        bannerAdapter.addFragment(BannerFrag(R.drawable.banner))
+        binding.homeBanner.adapter=bannerAdapter
+        binding.homeBanner.orientation=ViewPager2.ORIENTATION_HORIZONTAL
+
+
+        val panelAdapter=PanelVPAdapter(this)
+        binding.homePannelVp.adapter=panelAdapter
+
+
+
+        val indicator: CircleIndicator3 = binding.indicator
+        indicator.setViewPager(binding.homePannelVp)
 
 
         return binding.root
