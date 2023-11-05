@@ -18,6 +18,23 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <SeekBar
+        android:id="@+id/main_miniplayer_progress_sb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:layout_marginBottom="-3dp"
+        android:progressBackgroundTint="@color/song_player_bg"
+        android:progressTint="@color/song_player"
+        android:progress="0"
+        android:max="100000"
+        android:thumb="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/play_bar" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/play_bar"
         android:layout_width="match_parent"
@@ -28,6 +45,7 @@
         app:layout_constraintBottom_toTopOf="@id/bottomNav"
         android:background="#E6E6E6"
         >
+
         <LinearLayout
             android:id="@+id/play_bar_title_artist"
             android:layout_width="wrap_content"
